@@ -1,0 +1,13 @@
+def frequency_counter(items):
+    blank_dict = {}
+
+    for i in items:
+        if i in blank_dict:
+            blank_dict[i] += 1
+        else:
+            blank_dict[i] = 1
+    return blank_dict
+
+item = ['a', 'b', 'c', 2, 3, 'a', 'b', 'a', 2, 2, 3]
+fr_rasult = frequency_counter(item)
+print(fr_rasult)
