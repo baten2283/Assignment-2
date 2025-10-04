@@ -1,0 +1,14 @@
+def invert_dict(my_dict):
+    new_dict = {}
+
+    for key, value in my_dict.items():
+        if value not in new_dict:
+            new_dict[value] = [key]
+        else:
+            new_dict[value].append(key)
+    return new_dict
+
+
+dict1 = {'Rahim': 1, 'Rahad': 3, 'Anika': 2, 'Forhad': 4, 'Ruman': 3}
+result = invert_dict(dict1)
+print(result)
