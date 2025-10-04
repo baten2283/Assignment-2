@@ -1,0 +1,16 @@
+def student_grade(student_marks):
+    result = []
+    for name, marks in student_marks.items():
+        if marks > 80:
+            result.append((name, marks))
+    return result
+
+my_student = {
+    "Rahim": 76,
+    "Anika": 83,
+    "Forhad": 97,
+    "Karim": 93
+}
+
+s_grade = student_grade(my_student)
+print(dict(s_grade))
