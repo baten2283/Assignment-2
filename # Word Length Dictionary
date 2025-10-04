@@ -1,0 +1,11 @@
+def word_length_dict(word_list):
+    dictionary_length = {}
+
+    for i in word_list:
+        dictionary_length[i] = len(i)
+    
+    return dictionary_length
+
+my_list = ['Shamim', 'Akram', 'Mr.Sojib', 'Cat', 'Dog']
+result = word_length_dict(my_list)
+print(result)
