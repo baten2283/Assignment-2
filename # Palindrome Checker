@@ -1,0 +1,17 @@
+def palindrome_checker(text):
+    i = 0
+    x = len(text) - 1
+
+    while i < x:
+        if text[i] != text[x]:
+            return False
+        i += 1
+        x -= 1
+
+    return True
+
+my_text = "level"
+if palindrome_checker(my_text):
+    print("It's a palindrome")
+else:
+    print("It's not a palindrome")
